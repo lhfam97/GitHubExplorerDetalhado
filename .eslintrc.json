@@ -24,6 +24,7 @@
     },
     "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
     "rules": {
+        "react/jsx-one-expression-per-line": "off",
         // "react/jsx-indent": "false",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
@@ -43,7 +44,7 @@
             }
         ],
         "no-use-before-define": "off",
-        "prettier/prettier": "error"
+        "prettier/prettier": "warn"
     },
     "settings": {
         "import/resolver": {

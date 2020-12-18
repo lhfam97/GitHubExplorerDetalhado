@@ -1,8 +1,18 @@
+/* eslint-disable react/jsx-indent */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-    return <h1>Hello World</h1>;
-}
+import GlobalStyle from './styles/global';
+import Routes from './routes';
+
+const App: React.FC = () => (
+    <>
+        <BrowserRouter>
+            <Routes />
+        </BrowserRouter>
+        <GlobalStyle />
+    </>
+);
 
 export default App;
